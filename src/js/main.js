@@ -8,7 +8,7 @@ const teamMembers = document.getElementById("team-members");
 const mngrID = document.getElementById("mngrID");
 const expensesAmount = document.getElementById("expenses-amount");
 const expensesDate = document.getElementById("expenses-date");
-
+console.log(createForm, '==========');
 function createTeamPlan(
   teamName,
   projID,
@@ -81,7 +81,9 @@ function createTeamPlan(
 }
 
 createForm.addEventListener("submit", (e) => {
+  console.log("CHECK++++++++++");
   e.preventDefault();
+  console.log("CHECK++++++++++>>>>>");
   createTeamPlan(
     teamName.value,
     projID.value,
